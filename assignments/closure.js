@@ -1,6 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function whoLikesIceCream(yourName) {
+  const name = yourName;
+  function likesIceCream() {
+    console.log(`${name} likes ice-cream`)
+  }
+  likesIceCream();
+}
+
+whoLikesIceCream("Isaac");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

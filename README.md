@@ -26,7 +26,7 @@ This task focuses on getting practice with higher order functions and callback f
 
 * [X] Review the contents of the [callbacks.js](assignments/callbacks.js) file.  Notice you are given an array at the top of the page.  Use that array to aid you with your functions.
 
-* [ ] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
+* [] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
 
 ## Task 3: Array Methods
 
@@ -44,7 +44,7 @@ We have learned that closures allow us to access values in scope that have alrea
 
 **Hint: Utilize debugger statements in your code in combination with your developer tools to easily identify closure values.**
 
-* [ ] Review the contents of the [closure.js](assignments/closure.js) file.  
+* [X] Review the contents of the [closure.js](assignments/closure.js) file.  
 * [ ] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
 
 ## Stretch Goals
