@@ -97,6 +97,7 @@ function removeDuplicates(array, cb) {
 console.log("*** Stretch Challenge ***");
 items.push("Pencil"); // duplicate item
 console.log(items)
+
 removeDuplicates(items, function(array) {
   console.log(array)
 });
