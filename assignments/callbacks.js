@@ -88,4 +88,15 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
+  let newArray = array.map(element => element); // create new array
+  let uniqueItems = Array.from(new Set(newArray)); // convert array to set and back to Array
+  return cb(uniqueItems);
 }
+
+console.log("*** Stretch Challenge ***");
+items.push("Pencil"); // duplicate item
+console.log(items)
+removeDuplicates(items, function(array) {
+  console.log(array)
+});
