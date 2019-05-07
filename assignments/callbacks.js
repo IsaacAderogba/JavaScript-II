@@ -27,24 +27,60 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  return cb(arr.length)
 }
+
+getLength(items, function(length) {
+  console.log("Q1 Callbacks: " + length);
+})
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  return cb(arr.length - 1);
 }
+
+last(items, function(lastItem) {
+  console.log("Q2 Callbacks: " + lastItem);
+})
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  let sum = x + y;
+  return cb(sum);
 }
+
+sumNums(5, 9, function(theSum) {
+  console.log("Q3 Callbacks: " + theSum);
+})
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  let result = x * y;
+  return cb(result)
 }
+
+multiplyNums(10, 3, function(theResult) {
+  console.log("Q4 Callbacks: " + theResult);
+})
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  for(i = 0; i < list.length; i++){
+    if(item === list[i]){
+      return cb(true);
+    }
+  }
+  return cb(false);
 }
+
+contains("Notebook", items, function(booleanValue) {
+  console.log("Q5.1 Callbacks: " + booleanValue);
+});
+
+contains("Peanuts", items, function(booleanValue) {
+  console.log("Q5.2 Callbacks: " + booleanValue);
+});
 
 /* STRETCH PROBLEM */
 
